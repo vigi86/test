@@ -1,3 +1,4 @@
 text created on local machine
 
 does security work now?
+not yet, enforce administrator rule.
