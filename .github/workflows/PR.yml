@@ -1,8 +1,8 @@
 name: Pull Request on Branch Push
-on: [push]
-#  push:
-#    branches-ignore:
-#    - master
+on:
+  push:
+    branches-ignore:
+    - master
 jobs:
   auto-pull-request:
     name: PullRequestAction
