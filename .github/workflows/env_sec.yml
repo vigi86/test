@@ -8,5 +8,5 @@ jobs:
       steps:
         - name: show secret
           env:
-            SUPER_SECRET_TOKEN: ${{ secrets.TEST_SECRET.test_env }}
+            SUPER_SECRET_TOKEN: ${{ secrets.TEST_SECRET }}
           run: echo $SUPER_SECRET_TOKEN
