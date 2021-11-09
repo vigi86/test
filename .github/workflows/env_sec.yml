@@ -1,0 +1,14 @@
+name: Test access environment secret
+
+on: [workflow_dispatch]
+jobs:
+    test:
+      name: Access Environment Secret
+      runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run Unit tests
+        env:
+          SUPER_SECRET_TOKEN: ${{ secrets.TEST_SECRET.test_env }}
+        run: echo $SUPER_SECRET_TOKEN
