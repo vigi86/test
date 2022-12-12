@@ -4,4 +4,4 @@ does security work now?
 not yet, enforce administrator rule.
 
 testing pull request action
-test bash function
+gc() { git add . && git commit -m "$@"; }
